@@ -8,11 +8,11 @@
         <version>3.2.0</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
+    <groupId>com.org</groupId>
     <artifactId>kettle</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>pantaho</name>
-    <description>pantaho</description>
+    <name>kettle</name>
+    <description>kettle</description>
     <properties>
         <java.version>17</java.version>
     </properties>

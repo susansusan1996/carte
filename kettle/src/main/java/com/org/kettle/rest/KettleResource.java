@@ -1,4 +1,4 @@
-package com.kettle.rest;
+package com.org.kettle.rest;
 
 import com.kettle.service.dto.JobDTO;
 import com.kettle.util.WebResult;
@@ -7,10 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.client.support.BasicAuthenticationInterceptor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 
 import javax.xml.bind.JAXBContext;
@@ -19,10 +16,19 @@ import javax.xml.bind.Unmarshaller;
 import java.io.StringReader;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("/api")
 public class KettleResource {
 
     private final Logger log = LoggerFactory.getLogger(KettleResource.class);
+
+
+    /**
+     * 測試api
+     */
+    @GetMapping("/kettle/hello/")
+    public String hello() {
+        return "hello!";
+    }
 
     /**
      * 啟動JOB

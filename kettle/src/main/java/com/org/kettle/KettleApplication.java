@@ -1,4 +1,4 @@
-package com.kettle;
+package com.org.kettle;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
